@@ -9,6 +9,8 @@ echo "Name is:$USERNAME"
 
 echo "enter password"
 
-read password
+read -s password
 
 echo "enter password $password"
+
+echo "entered password in silent mode"
