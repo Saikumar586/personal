@@ -1,13 +1,13 @@
 #!/bin/bash
 
-echo "today which day"
+a=$1
+b=$2
 
-today=$1
-today1=sunday
+if($a -ge $b) then
+echo "a grater than b"
+else 
+echo "b is greater "
 
-if$($today -eq $today1)
-then
-echo "today: sunday"
-else
-echo "Monday"
-fi
+# today which day
+# pass the input
+# 
