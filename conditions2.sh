@@ -8,10 +8,10 @@
 #  else decline
 
 USER=$(id -u)
-if [ $user -ne 0 ];
+if [ $USER -ne 0 ]
 then
 echo "its not root user "
 else 
 echo "login with root user"
 fi
-yum install nginx -y
+yum install nginx -y 
