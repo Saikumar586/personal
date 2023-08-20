@@ -6,8 +6,8 @@
 # sum=$(var1+var2)
 # echo " total value is : $sum"
 
-$1 := "ram"
-$2 := "sai"
+$1=ram
+$2=sai
 
 echo "$1 is good boy"
 echo "$2 is v.good boy"
