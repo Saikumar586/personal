@@ -3,8 +3,10 @@
 echo "today which day"
 
 today=$1
-if($today)
-echo "holiday"
+
+if($today=sunday)
+then
+echo "today sunday"
 else
-echo"ready for office"
+echo "monday"
 fi
