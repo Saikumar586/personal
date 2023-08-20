@@ -6,10 +6,9 @@
 #  allow the access if its sudo user
 
 #  else decline
-up=0;
 
 USER=$(id -u)
-if [$user -ne 0]
+if [ $user -ne 0 ];
 then
 echo "its not root user "
 else 
