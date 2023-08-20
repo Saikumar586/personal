@@ -6,6 +6,6 @@ day=$1
 if($day=$1)
 echo"holiday"
 else{
-"ready for office"
+echo"ready for office"
 }
 fi
