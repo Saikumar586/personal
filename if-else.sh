@@ -6,7 +6,7 @@ today=$1
 
 if(today=$1)
 then
-echo "today sunday"
+echo "today sunday: $1"
 else
 echo "monday"
 fi
