@@ -11,6 +11,6 @@ var2=$2
 
 sum=$(($var1+$var2))
 echo "total value is : $sum"
-
+exit 1  echo "give correct input"
 
 
