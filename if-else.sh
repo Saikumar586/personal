@@ -3,7 +3,7 @@
 a=$1
 b=$2
 
-if($a -eq $b) 
+if[ $a -eq $b ]
 then
 echo "a eq than b "
 else 
