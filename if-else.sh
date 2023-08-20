@@ -7,7 +7,4 @@ if($a -ge $b) then
 echo "a grater than b"
 else 
 echo "b is greater "
-
-# today which day
-# pass the input
-# 
+fi
