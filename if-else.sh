@@ -7,5 +7,5 @@ if($a -ge $b)
 then
 echo "a grater than b : $a"
 else 
-echo "b is greater $a"
+echo "b is greater $a $b"
 fi
