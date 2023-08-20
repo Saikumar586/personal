@@ -10,7 +10,8 @@
 USER=$(id -u)
 if [ $user -ne 0 ]
 then
-echo "its root user "
+echo "its not root user "
 else 
 echo "login with root user"
 fi
+yum install nginx -y
