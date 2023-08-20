@@ -7,12 +7,10 @@
 
 #  else decline
 
-id=0
-id1=1000
-
-if [ $id = 1000 ]
+USER=[id -u]
+if [ $user -ge 0 ]
 then
-echo "its not root user $id1 "
+echo "its root user "
 else 
-echo "login with root user $id"
+echo "login with root user"
 fi
