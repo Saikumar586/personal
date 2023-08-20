@@ -8,7 +8,7 @@
 #  else decline
 
 USER=$(id -u)
-if [ $user -ge 0 ]
+if [ $user -ne 0 ]
 then
 echo "its root user "
 else 
