@@ -1,9 +1,16 @@
 #!/bin/bash
 
-a=4;
-b=5;
-sum=$(($a + $b))
-echo "total count: $sum"
-exit 1
+# a=4;
+# b=5;
+# sum=$(($a + $b))
+# exit 1
+# echo "total count: $sum"
+
+var1=$1
+var2=$2
+
+sum=$(var1+var2)
+echo " total value is : $sum"
+
 
 
