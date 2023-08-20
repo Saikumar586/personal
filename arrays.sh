@@ -2,4 +2,6 @@
 
 a=("sai" "kumar" "poduru")
 
-echo "name of the person : ${a[0],a[1]}"
+echo "name of the person : ${a[0]}"
+
+echo "all members : ${a[@]}"
