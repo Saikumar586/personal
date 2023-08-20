@@ -3,10 +3,11 @@
 echo "today which day"
 
 today=$1
+today1=sunday
 
-if(today=$1)
+if($1 -eq $today1)
 then
-echo "today sunday: $1"
+echo "today: $1"
 else
-echo "monday"
+echo "Monday"
 fi
