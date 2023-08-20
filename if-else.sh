@@ -3,10 +3,10 @@
 a=$1
 b=$2
 
-if[ $a -ne $b ]
+if[ $a -gt 10 ]
 
 then
-    echo "a eq than b "
+    echo "a gt than b "
 else 
     echo "b is ne "
 fi
