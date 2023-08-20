@@ -7,11 +7,12 @@
 
 #  else decline
 
-USERNAME=$sudo
+id=$0
+id=$1000
 
-if [ USERNAME = $sudo ]
+if [ $id = 0 ]
 then
-echo "install git"
+echo "its root user"
 else 
 echo "login with sudo user"
 fi
