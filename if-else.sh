@@ -3,7 +3,7 @@
 a=$1
 b=$2
 
-if [ $a -gt 5 ]
+if [ $a -gt $b ]
 then
     echo "a gt than b "
 else 
