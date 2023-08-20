@@ -3,7 +3,8 @@
 a=$1
 b=$2
 
-if($a == $b) then
+if($a -eq $b) 
+then
 echo "a eq than b "
 else 
 echo "b is ne "
