@@ -3,6 +3,6 @@
 
 echo "enter your name"
 
-read $USERNAME
+read USERNAME
 
-echo "Name is:$username" 
+echo "Name is:$USERNAME" 
