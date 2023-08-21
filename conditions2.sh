@@ -11,7 +11,7 @@ USER=$(id -u)
 if [ $USER -ne 0 ]
 then
 echo "its not root user "
-exit 1
+#exit 1
 #else 
 #echo "login with root user"
 fi
