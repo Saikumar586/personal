@@ -28,13 +28,13 @@ else
     echo -e "\e installation ${BGreen} success..! \e[m"
 fi
 
-yum install postfeix -y
+yum install postf1ix -y
 
 if [ $? -ne 0 ]
 then
-    echo "\e ${Red} postfix error \e[m"
+    echo "\e postfix ${Red} error \e[m"
     exit 1
 else 
-    echo "\e ${BGreen} postfix installed \e[m"
+    echo "\e postfix ${BGreen}installed \e[m]"
     exit 0
 fi
