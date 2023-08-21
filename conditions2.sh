@@ -23,7 +23,7 @@ then
     echo "installation error"
     exit 1
 else
-    echo -en "installation ${BGreen} success...!"\n
+    echo -e "installation ${BGreen} success...!"
 fi
 
 yum install postfix -y
