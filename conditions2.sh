@@ -35,6 +35,6 @@ then
     echo -e "\e postfix ${Red} error \e[m"
     exit 1
 else 
-    echo -e "\e postfix ${BGreen}installed \e[m]"
+    echo -e "\e postfix ${BGreen} installed \e[m]"
     exit 0
 fi
