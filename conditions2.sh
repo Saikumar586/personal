@@ -8,7 +8,7 @@
 #  else decline
 
 USER=$(id -u)
-BGreen='\033[1;32m'
+#BGreen='\033[1;32m'
 if [ $USER -ne 0 ]
 then
     echo "its not root user "
@@ -23,5 +23,5 @@ then
     echo "installation error"
     exit 1
 else
-    echo -e "installation ${BGreen} success.../!"
+    echo -e "installation ${BGreen} success...!"
 fi
