@@ -27,7 +27,7 @@ else
 fi
 
 yum install postifix -y
-if [$? -ne 0]
+if [ $? -ne 0 ]
 then
     echo "postfix error"
     exit 1
