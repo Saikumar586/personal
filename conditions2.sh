@@ -15,7 +15,7 @@ then
 #else 
 #echo "login with root user"
 fi
-    yum install nginxxx -y
+    yum install nginx -y
 
 if [ $? -ne 0 ]
 then
