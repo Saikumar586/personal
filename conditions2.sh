@@ -20,7 +20,7 @@ yum install nginxxx -y
 if [$? -ne 0 ]
 then
 echo "installation error"
-exit1
+exit 1
 else
 echo "installation success...!"
 fi
