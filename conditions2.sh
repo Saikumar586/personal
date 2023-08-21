@@ -9,6 +9,8 @@
 
 USER=$(id -u)
 BGreen='\033[1;32m'
+_RED=$(tput setaf 1)
+
 if [ $USER -ne 0 ]
 then
     echo "its not root user "
@@ -26,13 +28,13 @@ else
     echo -e "\e installation ${BGreen} success..! \e[m"
 fi
 
-yum install postfix -y
+yum install postfeix -y
 if [ $? -ne 0 ]
 then
-    echo "postfix error"
+    echo "\e ${_red}postfix error \e[m"
     exit 1
 else 
-    echo "postfix installed"
+    echo "\e ${BGreen}postfix installed \e[m"
     exit 0
 fi
 
