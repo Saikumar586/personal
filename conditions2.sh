@@ -32,9 +32,9 @@ yum install postf1ix -y
 
 if [ $? -ne 0 ]
 then
-    echo "\e postfix ${Red} error \e[m"
+    echo -e "\e postfix ${Red} error \e[m"
     exit 1
 else 
-    echo "\e postfix ${BGreen}installed \e[m]"
+    echo -e "\e postfix ${BGreen}installed \e[m]"
     exit 0
 fi
