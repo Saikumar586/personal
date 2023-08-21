@@ -25,3 +25,13 @@ then
 else
     echo -e "installation ${BGreen} success...!"
 fi
+
+yum install postifix -y
+if [$? -ne 0]
+then
+    echo "postfix error"
+    exit 1
+else 
+    echo "postfix installed"
+    exit 0
+fi
