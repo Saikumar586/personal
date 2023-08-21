@@ -14,5 +14,5 @@ echo "its not root user "
 exit 0
 #else 
 #echo "login with root user"
-#fi
+fi
 yum install nginxxx -y
