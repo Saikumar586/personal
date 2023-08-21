@@ -12,8 +12,8 @@ if [ $USER -ne 0 ]
 then
     echo "its not root user "
     exit 1
- else 
- echo "login with root user"
+ #else 
+ #echo "login with root user"
 fi
     yum install nginx -y
 
@@ -25,7 +25,7 @@ else
     echo -e "\e installation ${BGreen} success..! \e[m"
 fi
 
-yum install postf1ix -y
+yum install postfix -y
 
 if [ $? -ne 0 ]
 then
