@@ -10,17 +10,17 @@
 USER=$(id -u)
 if [ $USER -ne 0 ]
 then
-echo "its not root user "
-exit 1
+    echo "its not root user "
+    exit 1
 #else 
 #echo "login with root user"
 fi
-yum install nginxxx -y
+    yum install nginxxx -y
 
-if [$? -ne 0 ]
+if [ $? -ne 0 ]
 then
-echo "installation error"
-exit 1
+    echo "installation error"
+    exit 1
 else
-echo "installation success...!"
+    echo "installation success...!"
 fi
