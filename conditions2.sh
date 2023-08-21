@@ -1,8 +1,5 @@
 #!/bin/bash
-
-
 # need to install server
- 
 #  allow the access if its sudo user
 
 #  else decline
