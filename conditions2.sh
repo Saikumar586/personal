@@ -13,7 +13,7 @@ then
     echo "its not root user "
     exit 1
  #else 
- #echo "login with root user"
+ #echo "  login with root user"
 fi
     yum install nginx -y
 
