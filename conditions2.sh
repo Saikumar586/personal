@@ -8,7 +8,7 @@
 #  else decline
 
 USER=$(id -u)
-#BGreen='\033[1;32m'
+BGreen='\033[1;32m'
 if [ $USER -ne 0 ]
 then
     echo "its not root user "
