@@ -15,5 +15,4 @@ exit 1
 else 
 echo "login with root user"
 fi
-yum install nginx -y 
-$? 0
+yum install nginx -y
