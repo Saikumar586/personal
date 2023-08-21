@@ -9,7 +9,7 @@
 
 USER=$(id -u)
 BGreen='\033[1;32m'
-Red="\033[0;31'
+Red='\033[0;31'
 
 if [ $USER -ne 0 ]
 then
@@ -32,11 +32,9 @@ yum install postfeix -y
 
 if [ $? -ne 0 ]
 then
-    echo "\e ${Red}postfix error \e[m"
+    echo "\e ${Red} postfix error \e[m"
     exit 1
 else 
-    echo "\e ${BGreen}postfix installed \e[m"
+    echo "\e ${BGreen} postfix installed \e[m"
     exit 0
 fi
-
-##postfix
