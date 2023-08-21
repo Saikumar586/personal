@@ -26,7 +26,7 @@ else
     echo -e "installation ${BGreen} success...!"
 fi
 
-yum install postifix -y
+yum install postfix -y
 if [ $? -ne 0 ]
 then
     echo "postfix error"
