@@ -16,7 +16,12 @@
 #     echo "install server:$nginx,$postfix"
 # done
 
-for i in list {1..100}
+# for i in list {1..100}
+# do 
+# echo $i
+# done
+
+for i in list $@
 do 
-echo $i
+echo "install all the packages $i"
 done
