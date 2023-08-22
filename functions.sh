@@ -3,7 +3,8 @@
 USERID=$(id -u)
 BGreen='\e[0;32m'
 Red='\e[1;31m'
-DATE=[$DATE]
+DATE=$(date +%F)
+SCRIPTNAME=$0
 LOGFILE=/tmp/$0-$DATE
 VALIDATE(){
 if [ $1 -ne 0 ]
