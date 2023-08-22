@@ -3,7 +3,7 @@
 USERID=$(id -u)
 BGreen='\e[0;32m'
 Red='\e[1;31m'
-DATE=[ $DATE %F ]
+DATE=[$DATE %F ]
 LOGFILE=tmp/personal.log $DATE
 VALIDATE(){
 if [ $1 -ne 0 ]
@@ -26,6 +26,6 @@ fi
 
 VALIDATE $? "installing ngnix"
 
-yum install mysql -y &>>/personal.log 
+yum install mysql -y &>>tmp/personal.log 
 
 VALIDATE $? "installing mysql"
