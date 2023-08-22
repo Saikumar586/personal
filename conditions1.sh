@@ -11,7 +11,7 @@ then
  #else 
  #echo "  login with root user"
 fi
-    yum install ngsinx -y
+    yum install nginx -y
 
 if [ $? -ne 0 ]
 then
@@ -21,7 +21,7 @@ else
     echo -e "\e installation ${BGreen} success..! \e[m"
 fi
 
-yum install postsfix -y
+yum install postfix -y
 
 if [ $? -ne 0 ]
 then
