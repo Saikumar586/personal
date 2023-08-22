@@ -22,8 +22,8 @@ then
 fi
     yum install nginx -y
 
-VALIDATE $2 "installing ngnix"
+VALIDATE $? "installing ngnix"
 
 yum install mysql -y
 
-VALIDATE $2 "installing mysql"
+VALIDATE $? "installing mysql"
