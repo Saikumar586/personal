@@ -7,11 +7,10 @@ validate()
 {
 if [ $1 -ne 0 ]
 then 
-    echo -e "\e installation ${red}failure \e[m"
+    echo -e "\e installation ${red}failure \e[m "
 exit 1
 else
-    echo -e "\e installation ${BGreen}success \e[m"
-
+    echo -e "\e installation ${BGreen}success \e[m "
 }
 
 if [ $USERID -ne 0 ]
