@@ -4,7 +4,7 @@ USERID=$(id -u)
 BGreen='\e[0;32m'
 Red='\e[1;31m'
 DATE=[$DATE %F ]
-LOGFILE=tmp/personal.log $DATE
+LOGFILE=/tmp/$0-$DATE
 VALIDATE(){
 if [ $1 -ne 0 ]
 then 
@@ -22,10 +22,10 @@ then
 #  else 
 #  echo " login with root user"
 fi
-    yum install nnginx -y &>>tmp/personal.log 
+    yum install nnginx -y &>>$LOGFILE
 
 VALIDATE $? "installing ngnix"
 
-yum install mysql -y &>>tmp/personal.log 
+yum install mysql -y &>>$LOGFILE 
 
 VALIDATE $? "installing mysql"
