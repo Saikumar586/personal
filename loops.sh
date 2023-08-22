@@ -21,9 +21,9 @@
 # echo $i
 # done
 USERID=$(id -u)
-R="/e[0;32m" #'\e[0;32m'
-G="/e[0;33m"
-N="/e[0;0m"
+R="/e[32m" #'\e[0;32m'
+G="/e[33m"
+N="/e[0m"
 FILENAME=$0
 DATE=$(date +%F)
 LOGFILE=/tmp/$DATE-$FILENAME
