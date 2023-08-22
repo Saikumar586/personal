@@ -3,14 +3,14 @@
 USERID=$(id -u)
 BGreen='\033[0;32m'
 Red='\033[0;31m'
-validate()
-{
+VALIDATE(){
 if [ $1 -ne 0 ]
 then 
     echo -e "\e installation ${red}failure \e[m "
-exit 1
+    exit 1
 else
     echo -e "\e installation ${BGreen}success \e[m "
+fi
 }
 
 if [ $USERID -ne 0 ]
@@ -22,8 +22,8 @@ then
 fi
     yum install nginx -y
 
-validate $?
+VALIDATE $?
 
 yum install mysql -y
 
-validate $?
+VALIDATE $?
