@@ -20,10 +20,10 @@ then
 #  else 
 #  echo " login with root user"
 fi
-    yum install nginx -y
+    yum install nnginx -y
 
 VALIDATE $?
 
-yum install mysql -y
+yum install mysqll -y
 
 VALIDATE $?
