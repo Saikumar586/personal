@@ -12,11 +12,11 @@ Red='\e[1;31m'
 #     echo -e "\e $2 ${BGreen} success \e[m "
 # fi
 VALIDATE() {
-if [ $1 - ne 0 ];
+if [ $1 -ne 0 ];
 then
-echo -e"$Red$2 is failure"
+echo -e "\e ${Red} is failure \e[m"
 else
-echo -e"$BGreen$2 is success"
+echo -e "\e ${BGreen} is failure \e[m"
 fi
 }
 
