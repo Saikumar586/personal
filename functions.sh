@@ -3,7 +3,7 @@
 USERID=$(id -u)
 BGreen='\e[0;32m'
 Red='\e[1;31m'
-DATE=[$DATE %F ]
+DATE=[$DATE]
 LOGFILE=/tmp/$0-$DATE
 VALIDATE(){
 if [ $1 -ne 0 ]
