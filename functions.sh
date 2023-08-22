@@ -6,10 +6,10 @@ Red='\e[1;31m'
 VALIDATE(){
 if [ $1 -ne 0 ]
 then 
-    echo -e "\eInstallation ${Red}failure \e[m "
+    echo -e"\eInstallation ${Red}failure \e[m "
     exit 1
 else
-    echo -e "\eInstallation ${BGreen}success \e[m "
+    echo -e"\eInstallation ${BGreen}success \e[m "
 fi
 }
 
