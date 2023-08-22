@@ -22,7 +22,7 @@ then
 #  else 
 #  echo " login with root user"
 fi
-    yum install nnginx -y &>>$LOGFILE
+    yum install nginx -y &>>$LOGFILE
 
 VALIDATE $? "installing ngnix"
 
