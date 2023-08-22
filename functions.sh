@@ -11,6 +11,7 @@ then
 else
     echo -e " $2 ${BGreen} success \e[m "
 fi
+}
 # VALIDATE() {
 # if [ $1 -ne 0 ];
 # then
