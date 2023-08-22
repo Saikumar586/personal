@@ -3,6 +3,8 @@
 USERID=$(id -u)
 BGreen='\e[0;32m'
 Red='\e[1;31m'
+DATE=[ $DATE -%F ]
+LOGFILE=[ /h/devopstools/repos/shell-script.log $DATE ]
 VALIDATE(){
 if [ $1 -ne 0 ]
 then 
@@ -20,10 +22,10 @@ then
 #  else 
 #  echo " login with root user"
 fi
-    yum install nnginx -y
+    yum install nnginx -y &>>/h/devopstools/repos/shell-script.log
 
 VALIDATE $? "installing ngnix"
 
-yum install mysql -y
+yum install mysql -y &>>/h/devopstools/repos/shell-script.log
 
 VALIDATE $? "installing mysql"
