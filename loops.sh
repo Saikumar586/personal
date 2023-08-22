@@ -20,8 +20,23 @@
 # do 
 # echo $i
 # done
+USERID=[ id -u ]
+R='/e[0;33]'
+G='/e[0;31]'
+N='/e[0;0]'
+VALIDATE()
+{
+    if[ $USERID -ne 0]
+    then
+    echo -e "pls check with $R root user $N" 
+    else
+    echo -e "install $G servers... $N"
+}
 
 for i in $@
 do 
     yum install $i
+    
+    VALIDATE $?
 done
+
