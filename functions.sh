@@ -14,9 +14,9 @@ Red='\e[1;31m'
 VALIDATE() {
 if [ $1 - ne 0 ];
 then
-echo - e"$Red$2 is failure"
+echo -e"$Red$2 is failure"
 else
-echo - e"$BGreen$2 is success"
+echo -e"$BGreen$2 is success"
 fi
 }
 
