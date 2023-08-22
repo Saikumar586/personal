@@ -23,5 +23,5 @@
 
 for i in $@
 do 
-echo "install all the packages $i"
+    yum install $i
 done
