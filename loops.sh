@@ -26,17 +26,18 @@ G='/e[0;31]'
 N='/e[0;0]'
 VALIDATE()
 {
-    if[ $USERID -ne 0]
+    if [ $USERID -ne 0]
     then
     echo -e "pls check with $R root user $N" 
     else
     echo -e "install $G servers... $N"
+    fi
 }
 
 for i in $@
 do 
     yum install $i
-    
+
     VALIDATE $?
 done
 
