@@ -27,6 +27,8 @@ N="\e[0m"
 FILENAME=$0
 DATE=$(date +%F)
 LOGFILE=/tmp/$DATE-$FILENAME
+PACKAGE=(yum -q list installed $@ &>/dev/null && echo "Installed" || echo "Not installed")
+
 VALIDATE()
 {
     if [ $1 -ne 0 ]
@@ -44,5 +46,12 @@ do
 
     VALIDATE $?
 done
+
+if [ $PACKAGE = $i ]
+echo "package exist"
+exit 1
+else 
+echo "install the package"
+fi
 
 
