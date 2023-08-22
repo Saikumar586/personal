@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-a=[$a1]
-b=[$b1]
+a=[$1]
+b=[$2]
 
-echo "print values: $a"
+echo "print values: $@"
