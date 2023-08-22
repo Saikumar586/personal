@@ -20,24 +20,29 @@
 # do 
 # echo $i
 # done
-USERID=[ id -u ]
-R='/e[0;33]'
-G='/e[0;31]'
-N='/e[0;0]'
+USERID=$(id -u)
+R='/e[0;33m'
+G='/e[0;31m'
+N='/e[0;0m'
+FILENAME=$0
+DATE=$(date +%F)
+LOGFILE=/tmp/$DATE-$FILENAME
 VALIDATE()
 {
-    if [ $USERID -ne 0]
-    then
-    echo -e "pls check with $R root user $N" 
-    else
-    echo -e "install $G servers... $N"
-    fi
+    if [ $1 -ne 0 ]
+then 
+    echo -e " ${Red} failure \e[m "
+    exit 1
+else
+    echo -e " ${BGreen} success \e[m "
+fi
 }
 
 for i in $@
 do 
-    yum install $i
+    yum install $i &>>$LOGFILE
 
     VALIDATE $?
 done
+
 
