@@ -10,4 +10,6 @@ echo "print no.of rows : $#"
 
 echo "print file name : $0"
 
-echo " print : $?"
+echo " print : $?" 
+
+echo " print : $a"
