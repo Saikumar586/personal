@@ -21,7 +21,7 @@
 # echo $i
 # done
 
-for i in list $@
+for i in $@
 do 
 echo "install all the packages $i"
 done
