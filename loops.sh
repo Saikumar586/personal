@@ -21,8 +21,8 @@
 # echo $i
 # done
 USERID=$(id -u)
-R='/e[0;33m'
-G='/e[0;31m'
+R='/e[0;32m' #'\e[0;32m'
+G='/e[0;33m'
 N='/e[0;0m'
 FILENAME=$0
 DATE=$(date +%F)
@@ -31,10 +31,10 @@ VALIDATE()
 {
     if [ $1 -ne 0 ]
 then 
-    echo -e " ${R}failure $N "
+    echo -e " $R failure $N "
     exit 1
 else
-    echo -e " ${G}success \e[m "
+    echo -e " $G success $N "
 fi
 }
 
