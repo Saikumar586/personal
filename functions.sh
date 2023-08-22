@@ -1,8 +1,8 @@
 #!/bin/bash
 
 USERID=$(id -u)
-BGreen='\033[0;32m'
-Red='\033[0;31m'
+BGreen='\e[0;32m'
+Red='\e[0;31m'
 VALIDATE(){
 if [ $1 -ne 0 ]
 then 
