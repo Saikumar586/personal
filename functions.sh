@@ -6,10 +6,10 @@ Red='\e[1;31m'
 VALIDATE(){
 if [ $1 -ne 0 ]
 then 
-    echo -e "\e Installation ${Red} failure \e[m "
+    echo -e "\e $2 ${Red} failure \e[m "
     exit 1
 else
-    echo -e "\e Installation ${BGreen} success \e[m "
+    echo -e "\e $2 ${BGreen} success \e[m "
 fi
 }
 
@@ -22,8 +22,8 @@ then
 fi
     yum install nginx -y
 
-VALIDATE $? "ngnix"
+VALIDATE $? "installing ngnix"
 
 yum install mysql -y
 
-VALIDATE $? "mysql"
+VALIDATE $? "installing mysql"
