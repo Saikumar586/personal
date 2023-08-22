@@ -31,10 +31,10 @@ VALIDATE()
 {
     if [ $1 -ne 0 ]
 then 
-    echo -e " ${Red} failure \e[m "
+    echo -e " ${R}failure $N "
     exit 1
 else
-    echo -e " ${BGreen} success \e[m "
+    echo -e " ${G}success \e[m "
 fi
 }
 
