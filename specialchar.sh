@@ -4,4 +4,4 @@
 a=[$a1]
 b=[$b1]
 
-echo "print values: $@"
+echo "print values: $a"
