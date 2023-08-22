@@ -42,9 +42,9 @@ fi
 
 for i in $@
 do 
-    yum -q list installed $i &>/dev/null && echo "Installed" || echo "Not installed" &>>$LOGFILE
+    yum install $i -q list installed &>/dev/null && echo "Installed" || echo "Not installed" &>>$LOGFILE
 
-    yum install $i &>>$LOGFILE
+    #yum install $i &>>$LOGFILE
 
     VALIDATE $?
 done
