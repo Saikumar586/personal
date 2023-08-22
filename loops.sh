@@ -27,7 +27,7 @@ N="\e[0m"
 FILENAME=$0
 DATE=$(date +%F)
 LOGFILE=/tmp/$DATE-$FILENAME
-PACKAGE=(yum -q list installed $@ &>/dev/null && echo "Installed" || echo "Not installed")
+
 
 VALIDATE()
 {
@@ -42,16 +42,18 @@ fi
 
 for i in $@
 do 
-    yum install $i &>>$LOGFILE
+    yum -q list installed $i &>/dev/null && echo "Installed" || echo "Not installed"
+
+    #yum install $i &>>$LOGFILE
 
     VALIDATE $?
 done
 
-if [ $PACKAGE = $i ]
-echo "package exist"
-exit 1
-else 
-echo "install the package"
-fi
+# if [ $PACKAGE = $i ]
+# echo "package exist"
+# exit 1
+# else 
+# echo "install the package"
+# fi
 
 
