@@ -48,7 +48,7 @@ do
     then  
     echo "install package: $i" 
     else 
-    echo "Already installed ignore $i"
+    echo "Already installed ignore : $i"
     fi
 
     VALIDATE $? "server $i"
