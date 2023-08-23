@@ -47,12 +47,8 @@ do
 
     VALIDATE $? "server $i"
 done
+
  
-# if [  ]
-# echo "package exist"
-# exit 1
-# else 
-# echo "install the package"
-# fi
+
 
 
