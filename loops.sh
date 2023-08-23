@@ -48,14 +48,6 @@ do
 
 done
 
-if [ yum -q list installed $i &>/dev/null && echo "Installed" || echo "Not installed" ] &>>$LOGFILE then 
-    
-    else  
-    
-    yum install $i &>>$LOGFILE
-    
-    VALIDATE $?
-fi
 
 # if [  ]
 # echo "package exist"
