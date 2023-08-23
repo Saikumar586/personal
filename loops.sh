@@ -33,7 +33,7 @@ VALIDATE()
 {
     if [ $1 -ne 0 ]
 then 
-    echo -e "$R failure $N "
+    echo -e "$R failuree $N "
     exit 1
 else
     echo -e "$G success $N "
@@ -42,7 +42,7 @@ fi
 
 for i in $@
 do 
-    yum install $i -y  &>>$LOGFILE 
+    yum install $i -y  #&>>$LOGFILE 
     
     if [ $? -ne 0 ] 
     then  
