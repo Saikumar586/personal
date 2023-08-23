@@ -46,13 +46,15 @@ do
 
     #echo "install package: $i" 
 
-    yum -q list installed $i &>/dev/null && echo "Installed" || echo "Not installed" &>>$LOGFILE
+done
 
-    if ! install then 
+if [ yum -q list installed $i &>/dev/null && echo "Installed" || echo "Not installed" ] &>>$LOGFILE
+
+    if ! Installed then 
     echo yum install $i &>>$LOGFILE
     VALIDATE $?
-    fi 
-done
+
+fi
 
 # if [  ]
 # echo "package exist"
