@@ -42,7 +42,7 @@ fi
 
 for i in $@
 do 
-    yum install $i &>>$LOGFILE   
+    yum install $i -y &>>$LOGFILE   
     #echo "install package: $i" 
 done
 
