@@ -42,8 +42,14 @@ fi
 
 for i in $@
 do 
-    yum install $i -y &>>$LOGFILE   
-    #echo "install package: $i" 
+    yum install $i -y &>>$LOGFILE 
+    
+    if [ $? -ne 0 ] 
+    then  
+    echo "install package: $i" 
+    else 
+    echo "Already installed ignore $i"
+    fi
 
     VALIDATE $? "server $i"
 done
