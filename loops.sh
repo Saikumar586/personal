@@ -20,6 +20,7 @@
 # do 
 # echo $i
 # done
+
 USERID=$(id -u)
 R="\e[32m" #'\e[0;32m'
 G="\e[33m"
@@ -27,7 +28,6 @@ N="\e[0m"
 FILENAME=$0
 DATE=$(date +%F)
 LOGFILE=/tmp/$DATE-$FILENAME
-
 
 VALIDATE()
 {
@@ -42,10 +42,8 @@ fi
 
 for i in $@
 do 
-    yum install $i &>>$LOGFILE
-
+    yum install $i &>>$LOGFILE   
     #echo "install package: $i" 
-
 done
 
 
