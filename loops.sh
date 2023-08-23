@@ -43,15 +43,19 @@ fi
 for i in $@
 do 
     yum install $i &>>$LOGFILE
-    
+
+    #echo "install package: $i" 
+
     yum -q list installed $i &>/dev/null && echo "Installed" || echo "Not installed" &>>$LOGFILE
 
-    #yum install $i &>>$LOGFILE
-
+    if ! install then 
+    echo yum install $i &>>$LOGFILE
+    fi
+    
     VALIDATE $?
 done
 
-# if [ $PACKAGE = $i ]
+# if [  ]
 # echo "package exist"
 # exit 1
 # else 
