@@ -42,7 +42,7 @@ fi
 
 for i in $@
 do 
-    yum install $i -y &>>$LOGFILE 
+    yum install $i -y  &>>$LOGFILE 
     
     if [ $? -ne 0 ] 
     then  
