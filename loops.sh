@@ -44,9 +44,10 @@ for i in $@
 do 
     yum install $i -y &>>$LOGFILE   
     #echo "install package: $i" 
+
+    VALIDATE $? "server $i"
 done
-
-
+ 
 # if [  ]
 # echo "package exist"
 # exit 1
