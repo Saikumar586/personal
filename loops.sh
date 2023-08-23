@@ -50,9 +50,8 @@ do
 
     if ! install then 
     echo yum install $i &>>$LOGFILE
-    fi
-    
     VALIDATE $?
+    fi 
 done
 
 # if [  ]
