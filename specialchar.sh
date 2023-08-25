@@ -6,7 +6,7 @@ b=[$2]
 
 echo "print all values: $@"
 
-echo "print no.of rows : $#"
+echo "print no.of ARGUMENTS : $#"
 
 echo "print file name : $0"
 
