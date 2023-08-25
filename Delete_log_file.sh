@@ -10,7 +10,7 @@ MAKEDIR=/home/centos/app-log
 LOGSDIR=/home/centos/shell-script
 SCRIPTNAME=$0
 DATE=$(date +%F)
-LOGFILE=/$MAKEDIR/$DATE-$0.log
+LOGFILE=/$LOGSDIR/$DATE-$0.log
 FILE_LOC=$(find $MAKEDIR -name "*.log*" -type f -mtime +15)
 
 
@@ -18,7 +18,7 @@ echo "$FILE_LOC"
 
 while read line
 do 
-echo "delete $line" &>$LOGFILE
+echo "delete $line" &> $LOGFILE
 rm -rf $line
 done <<<$FILE_LOC
 
