@@ -19,7 +19,7 @@ echo "$FILE_LOC"
 while read line
 echo "delete $line" &>$LOGFILE
 rm -rf $line
-done < $FILE_LOC
+done <<<$FILE_LOC
 
 #IF [ $FILE_LOC ]
 
