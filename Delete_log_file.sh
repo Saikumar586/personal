@@ -10,7 +10,7 @@ MAKEDIR=/home/centos/app-log
 LOGSDIR=/tmp/shell-script
 SCRIPTNAME=$0
 DATE=$(date +%F)
-LOGFILE=/$makedir/$DATE-$SCRIPTNAME.log
+LOGFILE=/$MAKEDIR/$DATE-$SCRIPTNAME.log
 FILE_LOC=$(find $MAKEDIR -name "*.log*" -type f -mtime +15)
 
 
