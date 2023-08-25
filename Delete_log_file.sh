@@ -17,9 +17,10 @@ FILE_LOC=$(find $MAKEDIR -name "*.log*" -type f -mtime +14)
 echo "$FILE_LOC"
 
 while read line
+do 
 echo "delete $line" &>$LOGFILE
 rm -rf $line
-done <<<$FILE_LOC
+done <<< $FILE_LOC
 
 #IF [ $FILE_LOC ]
 
