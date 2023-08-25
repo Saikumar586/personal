@@ -7,14 +7,14 @@
 #create backup for daleted logfiles.
 
 MAKEDIR=/home/centos/app-log
-LOGSDIR=/home/centos/app-log
+LOGSDIR=/tmp/
 SCRIPTNAME=$0
 DATE=$(date +%F)
 LOGFILE=/$makedir/$DATE-$SCRIPTNAME
 FILE_LOC=$(find $MAKEDIR -name "*.log*" -type f -mtime +14)
 
 
-echo "$FILE_LOC files deleted"
+echo "$FILE_LOC"
 #IF [ $FILE_LOC ]
 
 
