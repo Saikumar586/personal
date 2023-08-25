@@ -7,10 +7,10 @@
 #create backup for daleted logfiles.
 
 MAKEDIR=/home/centos/app-log
-LOGSDIR=/tmp/shell-script
+LOGSDIR=/home/centos/shell-script
 SCRIPTNAME=$0
 DATE=$(date +%F)
-LOGFILE=/$MAKEDIR/$DATE-$SCRIPTNAME.log
+LOGFILE=/$MAKEDIR/$DATE-$0.log
 FILE_LOC=$(find $MAKEDIR -name "*.log*" -type f -mtime +15)
 
 
