@@ -18,7 +18,7 @@ echo "$FILE_LOC"
 
 while read line
 do 
-echo "delete $line" &>$LOGFILE
+echo "Delete $line" &> $LOGFILE
 rm -rf $line
 done <<< $FILE_LOC
 
