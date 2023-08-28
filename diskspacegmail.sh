@@ -16,7 +16,9 @@
 
 ALERT=5 # alert level 
 ADMIN="psaikumar586@gmail.com" # dev/sysadmin email ID
-df -H | grep -vE '^Filesystem|tmpfs|cdrom' | awk '{ print $5 " " $1 }' | while read -r output;
+df / | grep / | awk '{ print $5}' | sed 's/%//g' | 
+
+while read -r output;
 do
   echo "$output"
   usep=$(echo "$output" | awk '{ print $1}' | cut -d'%' -f1 )
