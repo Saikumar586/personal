@@ -15,7 +15,7 @@
 # fi
 
 ALERT=5 # alert level 
-ADMIN="you@cyberciti-biz" # dev/sysadmin email ID
+ADMIN="psaikumar586@gmail.com" # dev/sysadmin email ID
 df -H | grep -vE '^Filesystem|tmpfs|cdrom' | awk '{ print $5 " " $1 }' | while read -r output;
 do
   echo "$output"
