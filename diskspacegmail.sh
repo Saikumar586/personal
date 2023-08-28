@@ -10,6 +10,7 @@
    
  if [ "$CURRENT" -gt "$THRESHOLD" ] ; 
  then  
-   else echo mail -s 'Disk Space Alert' $gamil
+   else
+    mail -s 'Disk Space Alert' $gamil
  Your root partition remaining free space is critically low. Used: $CURRENT%   
 fi
