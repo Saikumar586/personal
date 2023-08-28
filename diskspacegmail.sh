@@ -9,7 +9,7 @@
    
  if [ "$CURRENT" -gt "$THRESHOLD" ] ; 
  then  
-   mail -s 'Disk Space Alert' psaikumar586@gmail.com << EOF  
+   mail -s 'Disk Space Alert' psaikumar586@gmail.com <<< EOF  
  Your root partition remaining free space is critically low. Used: $CURRENT%  
  EOF  
  fi
