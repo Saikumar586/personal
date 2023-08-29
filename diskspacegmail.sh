@@ -26,6 +26,6 @@ do
   if [ $usep -ge $ALERT ]; then
     # echo "Running out of space \"$partition ($usep%)\" on $(hostname) as on $(date)" |
     # mail -s "Alert: Almost out of disk space $usep%" "$ADMIN"
-    echo "This is a test mail & Date $(date)" | mail -s "message" $ADMIN
+    echo "This is a test mail & Date $(date)" | mail -s "running out of space" $ADMIN
   fi
 done
