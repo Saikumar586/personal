@@ -10,7 +10,8 @@
    
  if [ "$CURRENT" -gt "$THRESHOLD" ] ; 
  then  
-    mail -s 'Disk Space Alert' $gamil
-    echo root partition remaining free space is critically low. Used: $CURRENT%   
-fi
+    #mail -s 'Disk Space Alert' $gamil
+    #echo root partition remaining free space is critically low. Used: $CURRENT%   
+    echo "$CURRENT This is a test mail & Date $(date)" | mail -s "message" $gmail
+    fi
 
